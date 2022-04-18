@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  text-decoration: none;
+}
+
+.show {
+  display: initial !important;
+}
+
+@media (min-width: 1000px) {
+  body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20% 80%;
+        grid-template-columns: 20% 80%;
+    -ms-grid-rows: (auto)[5];
+        grid-template-rows: repeat(5, auto);
+  }
+  nav {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    grid-row: 1 / 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -webkit-box-shadow: 1px 2px 8px gainsboro;
+            box-shadow: 1px 2px 8px gainsboro;
+    height: 300vh;
+  }
+  nav .slaca-2019 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    height: 100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffb354), to(#ee7a3a));
+    background: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
+  }
+  nav img {
+    width: 80%;
+    margin: 0 10% 0 10%;
+  }
+  nav .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+  }
+  nav .nav-menu ul {
+    list-style: none;
+    width: 100%;
+  }
+  nav .nav-menu ul a {
+    color: #725c5c;
+    font-size: 0.9em;
+    margin: 0 0 0 30px;
+  }
+  nav .nav-menu ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 30px;
+    border-bottom: 1px solid #cecece;
+  }
+  .header-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    background-color: #fdf1eb;
+    height: 100px;
+    padding: 30px;
+    color: #725c5c;
+  }
+  .header-bar .header-bar-title p {
+    font-size: 0.6rem;
+  }
+  .header-bar .header-bar-title h1 {
+    font-size: 1.2rem;
+  }
+  .header-bar .content-languages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100px;
+    height: 35px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+  }
+  .header-bar .selected-language,
+  .header-bar .language-list {
+    font-size: 11px;
+  }
+  .header-bar .selected-language {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    cursor: pointer;
+  }
+  .header-bar .selected-language img {
+    width: 10px;
+    margin: 0 5px 0 5px;
+  }
+  .header-bar .language-list {
+    display: none;
+    margin: 5px 0 0 0;
+    width: 100px;
+    height: 300px;
+    background-color: #000000;
+    color: white;
+    padding: 4px;
+    opacity: 0.7;
+  }
+  .header-bar .language {
+    cursor: pointer;
+  }
+  .header-bar .header-login {
+    font-size: 11px;
+    margin-left: 16px;
+    text-align: right;
+  }
+  .header-bar .user-picture {
+    width: 30px;
+    border-radius: 50%;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    padding: 30px;
+  }
+  header h1 {
+    font-size: 1.2rem;
+    color: #ed7839;
+  }
+  header .header-video-column {
+    width: 70%;
+  }
+  header .header-video-column .video-example {
+    width: 100%;
+    margin-top: 20px;
+  }
+  header .header-infos-column {
+    width: 28%;
+  }
+  header .header-infos-column .links {
+    margin: 8px;
+    text-align: right;
+  }
+  header .header-infos-column .links a {
+    background: #ed7839;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+  }
+  header .header-infos-column .links a img {
+    width: 16px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
