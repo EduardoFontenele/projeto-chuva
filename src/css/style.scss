@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap');
 
 @mixin flex($align, $justify, $direction: row) {
   display: flex;
@@ -28,10 +28,10 @@
   }
 
   nav {
-    grid-row: 1 / 5;
-    grid-column: 1 / 2;
+    width: 20%;
     box-shadow: 1px 2px 8px rgb(220, 220, 220);
-    height: 300vh;
+    height: 100vh;
+    position: fixed;
 
     .slaca-2019 {
       @include flex(center, center);
@@ -184,7 +184,55 @@
               width: 16px;
           }
         }
+      };
+
+      h2 {
+        font-size: .7rem;
+        color: #ED7839;
+        text-align: right;
+        margin: 12px 8px 12px 0;
+        font-weight: 300;
+      };
+
+      .details-container {
+        width: 100%;
+        height: 84%;
+        text-align: left;
+        border: 1px solid #ECECEC;
+        overflow: auto;
+        
+        .container-titles {
+          @include flex(center, initial);
+
+          background-color: #FDF1EB;
+          color: #4E4E4E;
+          font-weight: 300;
+          height: 40px;
+          padding: 10px;
+        }
+
+        .details-content {
+          font-family: 'Quicksand', sans-serif;
+          height: 100%;
+          text-align: left;
+          padding: 10px;
+          font-weight: 300;
+          font-size: .6rem;
+
+          p, h4 {
+            display: inline-block;
+            color: #5C5C5C;
+          }
+
+          .authors {
+            @include flex(initial, initial, column);
+
+            margin: 30px 0 30px 0;
+          }
+
+        }
       }
+
     }
   }
 }

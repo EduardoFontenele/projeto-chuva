@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -23,15 +23,11 @@
         grid-template-rows: repeat(5, auto);
   }
   nav {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 4;
-    grid-row: 1 / 5;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
+    width: 20%;
     -webkit-box-shadow: 1px 2px 8px gainsboro;
             box-shadow: 1px 2px 8px gainsboro;
-    height: 300vh;
+    height: 100vh;
+    position: fixed;
   }
   nav .slaca-2019 {
     display: -webkit-box;
@@ -245,6 +241,68 @@
   }
   header .header-infos-column .links a img {
     width: 16px;
+  }
+  header .header-infos-column h2 {
+    font-size: .7rem;
+    color: #ED7839;
+    text-align: right;
+    margin: 12px 8px 12px 0;
+    font-weight: 300;
+  }
+  header .header-infos-column .details-container {
+    width: 100%;
+    height: 84%;
+    text-align: left;
+    border: 1px solid #ECECEC;
+    overflow: auto;
+  }
+  header .header-infos-column .details-container .container-titles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #FDF1EB;
+    color: #4E4E4E;
+    font-weight: 300;
+    height: 40px;
+    padding: 10px;
+  }
+  header .header-infos-column .details-container .details-content {
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+    text-align: left;
+    padding: 10px;
+    font-weight: 300;
+    font-size: .6rem;
+  }
+  header .header-infos-column .details-container .details-content p, header .header-infos-column .details-container .details-content h4 {
+    display: inline-block;
+    color: #5C5C5C;
+  }
+  header .header-infos-column .details-container .details-content .authors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 30px 0 30px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
