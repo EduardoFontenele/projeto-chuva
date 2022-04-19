@@ -26,26 +26,6 @@
     -ms-grid-rows: (auto)[5];
         grid-template-rows: repeat(5, auto);
   }
-  .container-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: initial;
-        -ms-flex-pack: initial;
-            justify-content: initial;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    background-color: #fdf1eb;
-    color: #757575;
-    font-weight: 300;
-    height: 40px;
-    padding: 10px;
-  }
   nav {
     width: 20%;
     -webkit-box-shadow: 1px 2px 8px gainsboro;
@@ -273,6 +253,26 @@
     margin: 12px 8px 12px 0;
     font-weight: 300;
   }
+  header .header-infos-column .container-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #fdf1eb;
+    color: #757575;
+    font-weight: 300;
+    height: 40px;
+    padding: 10px;
+  }
   header .header-infos-column .details-container {
     width: 100%;
     height: 84%;
@@ -318,6 +318,26 @@
     grid-row: 3 / 4;
     padding: 30px;
   }
+  .abstract-session .container-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #fdf1eb;
+    color: #757575;
+    font-weight: 300;
+    height: 40px;
+    padding: 10px;
+  }
   .abstract-session .abstract-container {
     border: 1px solid #ececec;
   }
@@ -341,5 +361,69 @@
     cursor: pointer;
     color: #ed7839;
   }
+}
+
+.discussion-session {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4 / 5;
+  padding: 30px;
+}
+
+.discussion-session .container-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #fdf1eb;
+  color: #757575;
+  font-weight: 300;
+  height: 40px;
+  padding: 10px;
+}
+
+.discussion-session .discussions {
+  border: 1px solid #ececec;
+}
+
+.discussion-session .share-ideas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */
