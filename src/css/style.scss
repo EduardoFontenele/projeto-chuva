@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap");
 
 @mixin flex($align, $justify, $direction: row) {
   display: flex;
@@ -20,11 +20,25 @@
   display: initial !important;
 }
 
+.showMore {
+  height: 100% !important;
+}
+
 @media (min-width: 1000px) {
   body {
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: repeat(5, auto);
+  }
+
+  .container-title {
+    @include flex(center, initial);
+
+    background-color: #fdf1eb;
+    color: #757575;
+    font-weight: 300;
+    height: 40px;
+    padding: 10px;
   }
 
   nav {
@@ -181,47 +195,38 @@
           border-radius: 5px;
 
           img {
-              width: 16px;
+            width: 16px;
           }
         }
-      };
+      }
 
       h2 {
-        font-size: .7rem;
-        color: #ED7839;
+        font-size: 0.7rem;
+        color: #ed7839;
         text-align: right;
         margin: 12px 8px 12px 0;
         font-weight: 300;
-      };
+      }
 
       .details-container {
         width: 100%;
         height: 84%;
         text-align: left;
-        border: 1px solid #ECECEC;
+        border: 1px solid #ececec;
         overflow: auto;
-        
-        .container-titles {
-          @include flex(center, initial);
-
-          background-color: #FDF1EB;
-          color: #4E4E4E;
-          font-weight: 300;
-          height: 40px;
-          padding: 10px;
-        }
 
         .details-content {
-          font-family: 'Quicksand', sans-serif;
+          font-family: "Quicksand", sans-serif;
           height: 100%;
           text-align: left;
           padding: 10px;
           font-weight: 300;
-          font-size: .6rem;
+          font-size: 0.6rem;
 
-          p, h4 {
+          p,
+          h4 {
             display: inline-block;
-            color: #5C5C5C;
+            color: #5c5c5c;
           }
 
           .authors {
@@ -229,10 +234,40 @@
 
             margin: 30px 0 30px 0;
           }
-
         }
       }
+    }
+  }
 
+  .abstract-session {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    padding: 30px;
+
+    .abstract-container {
+      border: 1px solid #ececec;
+    }
+
+    .abstract-content {
+      padding: 8px;
+      height: 150px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 23px;
+      letter-spacing: 0.02em;
+      color: #5c5c5c;
+      overflow: hidden;
+    }
+
+    #showMore {
+      position: relative;
+      bottom: 5px;
+      left: 88%;
+      z-index: 100;
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: #ed7839;
     }
   }
 }
