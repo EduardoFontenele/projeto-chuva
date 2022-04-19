@@ -21,3 +21,14 @@ function showLanguageList() {
 }
 
 selectedLanguage.addEventListener('click', showLanguageList)
+
+const showMoreBtn = document.querySelector('#showMore')
+
+function showMoreDetails() {
+    const abstractContent = document.querySelector('.abstract-content')
+    abstractContent.classList.toggle('showMore')
+    showMoreBtn.innerHTML = ''
+    return
+}
+
+showMoreBtn.addEventListener('click', showMoreDetails)
