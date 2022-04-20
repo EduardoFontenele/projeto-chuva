@@ -35,7 +35,7 @@
 
 .comment-div h5 {
   font-weight: 500;
-  color: #4D4D4D;
+  color: #4d4d4d;
   margin: 0 0 10px 0;
 }
 
@@ -45,7 +45,7 @@
 
 .comment-div p {
   font-size: 11px;
-  color: #4D4D4D;
+  color: #4d4d4d;
 }
 
 @media (min-width: 1000px) {
@@ -54,8 +54,8 @@
     display: grid;
     -ms-grid-columns: 20% 80%;
         grid-template-columns: 20% 80%;
-    -ms-grid-rows: (auto)[5];
-        grid-template-rows: repeat(5, auto);
+    -ms-grid-rows: (auto)[6];
+        grid-template-rows: repeat(6, auto);
   }
   nav {
     width: 20%;
@@ -393,259 +393,554 @@
     cursor: pointer;
     color: #ed7839;
   }
-}
-
-.discussion-session {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: initial;
-      -ms-flex-align: initial;
-          align-items: initial;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  grid-row: 4 / 5;
-  padding: 30px;
-}
-
-.discussion-session .container-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: initial;
-      -ms-flex-pack: initial;
-          justify-content: initial;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: #fdf1eb;
-  color: #757575;
-  border: 1px solid #ececec;
-  font-weight: 300;
-  height: 40px;
-  padding: 10px;
-}
-
-.discussion-session .discussions {
-  border: 1px solid #ececec;
-  padding: 30px;
-}
-
-.discussion-session .share-ideas {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 1rem;
-  text-align: center;
-}
-
-.discussion-session .share-ideas h4 {
-  color: #ed7839;
-}
-
-.discussion-session .share-ideas img {
-  height: 60px;
-  margin: 10px 0 10px 0;
-}
-
-.discussion-session .share-ideas p {
-  font-size: 0.7rem;
-  font-weight: 300;
-  color: #595959;
-  width: 50%;
-  margin: 20px 0 20px 0;
-}
-
-.discussion-session .share-ideas hr {
-  width: 100%;
-  height: 1px;
-  border: 1px solid #e7e7e7;
-  margin: 10px 0 10px 0;
-}
-
-.discussion-session .share-ideas button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background: -webkit-gradient(linear, left top, left bottom, from(#feb254), to(#f0813d));
-  background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
-  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
-          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
-  border-radius: 4px;
-  color: white;
-  position: relative;
-  z-index: 10;
-  bottom: 25px;
-  width: 150px;
-  height: 2rem;
-  border: none;
-  cursor: pointer;
-  font-weight: 700;
-}
-
-.discussion-session .create-new-topic {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 1rem;
-  text-align: center;
-}
-
-.discussion-session .create-new-topic h4 {
-  color: #ed7839;
-}
-
-.discussion-session .create-new-topic p {
-  font-size: 0.7rem;
-  font-weight: 300;
-  color: #595959;
-  width: 100%;
-  margin: 20px 0 20px 0;
-}
-
-.discussion-session .create-new-topic a {
-  text-decoration: underline;
-  font-weight: 500;
-  font-size: 11px;
-  color: #ed7839;
-  margin-bottom: 30px;
-}
-
-.discussion-session .create-new-topic hr {
-  width: 100%;
-  height: 1px;
-  border: 1px solid #e7e7e7;
-  margin: 10px 0 10px 0;
-}
-
-.discussion-session .create-new-topic button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background: -webkit-gradient(linear, left top, left bottom, from(#feb254), to(#f0813d));
-  background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
-  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
-          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
-  border-radius: 4px;
-  color: white;
-  position: relative;
-  z-index: 10;
-  bottom: 25px;
-  width: 150px;
-  height: 2rem;
-  border: none;
-  cursor: pointer;
-  font-weight: 700;
-}
-
-.discussion-session .create-topic {
-  border: 1px solid #ececec;
-  padding: 30px;
-  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12);
-}
-
-.discussion-session .create-topic form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: initial;
-      -ms-flex-align: initial;
-          align-items: initial;
-  -webkit-box-pack: initial;
-      -ms-flex-pack: initial;
-          justify-content: initial;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.discussion-session .create-topic form label {
-  color: #ed7839;
-  font-weight: 500;
-}
-
-.discussion-session .create-topic form input {
-  margin: 11px 0 11px 0;
-  height: 1.5rem;
-  padding: 9px;
-  border: 1px solid #ececec;
-}
-
-.discussion-session .create-topic form textarea {
-  padding: 10px;
-  border: 1px solid #ececec;
-  margin: 10px 0 10px 0;
-}
-
-.discussion-session .create-topic form button {
-  width: 100px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#feb254), to(#f0813d));
-  background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
-  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
-          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
-  border-radius: 4px;
-  color: white;
-  width: 150px;
-  height: 2rem;
-  border: none;
-  cursor: pointer;
-  font-weight: 700;
-  margin: 11px 0 11px 0;
+  .discussion-session {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / 5;
+    padding: 30px;
+  }
+  .discussion-session .container-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #fdf1eb;
+    color: #757575;
+    border: 1px solid #ececec;
+    font-weight: 300;
+    height: 40px;
+    padding: 10px;
+  }
+  .discussion-session .discussions {
+    border: 1px solid #ececec;
+    padding: 30px;
+  }
+  .discussion-session .share-ideas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+  .discussion-session .share-ideas h4 {
+    color: #ed7839;
+  }
+  .discussion-session .share-ideas img {
+    height: 60px;
+    margin: 10px 0 10px 0;
+  }
+  .discussion-session .share-ideas p {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #595959;
+    width: 50%;
+    margin: 20px 0 20px 0;
+  }
+  .discussion-session .share-ideas hr {
+    width: 100%;
+    height: 1px;
+    border: 1px solid #e7e7e7;
+    margin: 10px 0 10px 0;
+  }
+  .discussion-session .share-ideas button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: -webkit-gradient(linear, left top, left bottom, from(#feb254), to(#f0813d));
+    background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    color: white;
+    position: relative;
+    z-index: 10;
+    bottom: 25px;
+    width: 150px;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  .discussion-session .create-new-topic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+  .discussion-session .create-new-topic h4 {
+    color: #ed7839;
+  }
+  .discussion-session .create-new-topic p {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #595959;
+    width: 100%;
+    margin: 20px 0 20px 0;
+  }
+  .discussion-session .create-new-topic a {
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 11px;
+    color: #ed7839;
+    margin-bottom: 30px;
+  }
+  .discussion-session .create-new-topic hr {
+    width: 100%;
+    height: 1px;
+    border: 1px solid #e7e7e7;
+    margin: 10px 0 10px 0;
+  }
+  .discussion-session .create-new-topic button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: -webkit-gradient(linear, left top, left bottom, from(#feb254), to(#f0813d));
+    background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    color: white;
+    position: relative;
+    z-index: 10;
+    bottom: 25px;
+    width: 150px;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  .discussion-session .create-topic {
+    border: 1px solid #ececec;
+    padding: 30px;
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12);
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12);
+  }
+  .discussion-session .create-topic form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .discussion-session .create-topic form label {
+    color: #ed7839;
+    font-weight: 500;
+  }
+  .discussion-session .create-topic form input {
+    margin: 11px 0 11px 0;
+    height: 1.5rem;
+    padding: 9px;
+    border: 1px solid #ececec;
+  }
+  .discussion-session .create-topic form textarea {
+    padding: 10px;
+    border: 1px solid #ececec;
+    margin: 10px 0 10px 0;
+  }
+  .discussion-session .create-topic form button {
+    width: 100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#feb254), to(#f0813d));
+    background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    color: white;
+    width: 150px;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    margin: 11px 0 11px 0;
+  }
+  .discussion-session {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / 5;
+    padding: 30px;
+  }
+  .discussion-session .container-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #fdf1eb;
+    color: #757575;
+    border: 1px solid #ececec;
+    font-weight: 300;
+    height: 40px;
+    padding: 10px;
+  }
+  .discussion-session .discussions {
+    border: 1px solid #ececec;
+    padding: 30px;
+  }
+  .discussion-session .share-ideas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+  .discussion-session .share-ideas h4 {
+    color: #ed7839;
+  }
+  .discussion-session .share-ideas img {
+    height: 60px;
+    margin: 10px 0 10px 0;
+  }
+  .discussion-session .share-ideas p {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #595959;
+    width: 50%;
+    margin: 20px 0 20px 0;
+  }
+  .discussion-session .share-ideas hr {
+    width: 100%;
+    height: 1px;
+    border: 1px solid #e7e7e7;
+    margin: 10px 0 10px 0;
+  }
+  .discussion-session .share-ideas button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: -webkit-gradient(linear, left top, left bottom, from(#feb254), to(#f0813d));
+    background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    color: white;
+    position: relative;
+    z-index: 10;
+    bottom: 25px;
+    width: 150px;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  .discussion-session .create-new-topic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+  .discussion-session .create-new-topic h4 {
+    color: #ed7839;
+  }
+  .discussion-session .create-new-topic p {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #595959;
+    width: 100%;
+    margin: 20px 0 20px 0;
+  }
+  .discussion-session .create-new-topic a {
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 11px;
+    color: #ed7839;
+    margin-bottom: 30px;
+  }
+  .discussion-session .create-new-topic hr {
+    width: 100%;
+    height: 1px;
+    border: 1px solid #e7e7e7;
+    margin: 10px 0 10px 0;
+  }
+  .discussion-session .create-new-topic button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: -webkit-gradient(linear, left top, left bottom, from(#feb254), to(#f0813d));
+    background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    color: white;
+    position: relative;
+    z-index: 10;
+    bottom: 25px;
+    width: 150px;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  .discussion-session .create-topic {
+    border: 1px solid #ececec;
+    padding: 30px;
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12);
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12);
+  }
+  .discussion-session .create-topic form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .discussion-session .create-topic form label {
+    color: #ed7839;
+    font-weight: 500;
+  }
+  .discussion-session .create-topic form input {
+    margin: 11px 0 11px 0;
+    height: 1.5rem;
+    padding: 9px;
+    border: 1px solid #ececec;
+  }
+  .discussion-session .create-topic form textarea {
+    padding: 10px;
+    border: 1px solid #ececec;
+    margin: 10px 0 10px 0;
+  }
+  .discussion-session .create-topic form button {
+    width: 100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#feb254), to(#f0813d));
+    background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    color: white;
+    width: 150px;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    margin: 11px 0 11px 0;
+  }
+  footer {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5 / 6;
+    text-align: center;
+    padding: 30px 30px 0 30px;
+  }
+  footer hr {
+    width: 100%;
+    height: 1px;
+    border: 1px solid #e7e7e7;
+  }
+  footer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 20px;
+  }
+  footer div .galoa {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer div .galoa img {
+    width: 100%;
+  }
+  footer div .galoa a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: #7d4e98;
+    color: white;
+    border-radius: 5px;
+    font-size: 11px;
+    height: 2rem;
+    width: 150px;
+    margin: 10px 0 0 0;
+  }
+  footer div p {
+    color: #7d7d7d;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 30px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  footer div p span {
+    color: #4d4d4d;
+    font-weight: bold;
+  }
 }
 /*# sourceMappingURL=style.css.map */

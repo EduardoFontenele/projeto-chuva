@@ -48,13 +48,13 @@ class CreateTopic {
             e.preventDefault()
 
             const errorDivs = document.querySelectorAll('.error-div')
-            for(let div of errorDivs) {
+            for (let div of errorDivs) {
                 div.remove()
             }
-            
+
             const fieldsAreValid = this.fieldsAreValid()
 
-            if(fieldsAreValid) {
+            if (fieldsAreValid) {
                 this.createComment()
             }
         })
@@ -70,7 +70,7 @@ class CreateTopic {
         const h5 = document.createElement('h5')
         const p = document.createElement('p')
 
-        if(!author.value) {
+        if (!author.value) {
             h5.innerHTML = 'Anônimo'
         } else {
             h5.innerHTML = author.value
@@ -87,12 +87,15 @@ class CreateTopic {
 
         const shareIdeas = document.querySelector('.share-ideas')
         const createNewTopic = document.querySelector('.create-new-topic')
-        
+
         shareIdeas.classList.add('hidden')
         createNewTopic.classList.remove('hidden')
         subject.value = ''
         message.value = ''
         author.value = ''
+
+        const createTopicDiv = document.querySelector('.create-topic')
+        createTopicDiv.classList.add('hidden')
     }
 
 
@@ -131,3 +134,6 @@ function showTopicForm() {
 }
 
 createTopicBtn.addEventListener('click', showTopicForm)
+
+const createNewTopicBtn = document.querySelector('#createNewTopicBtn')
+createNewTopicBtn.addEventListener('click', showTopicForm)
