@@ -170,26 +170,57 @@
     </session>
 
     <session class="discussion-session">
+      <div class="container-title">
+        <h3>Discussões</h3>
+      </div>
 
       <div class="discussions">
-
-        <div class="container-title">
-          <h3>Discussões</h3>
-        </div>
-
         <div class="share-ideas">
-            <h4>Compartilhe suas ideias ou dúvidas com os autores!</h4>
-            <img src="./public/images/vetores-discussao.png" alt="">
-            <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
-            <hr>
-            <button>Criar tópico</button>
+          <h4>Compartilhe suas ideias ou dúvidas com os autores!</h4>
+          <img src="./public/images/vetores-discussao.png" alt="" />
+          <p>
+            Sabia que o maior estímulo no desenvolvimento científico e cultural
+            é a curiosidade? Deixe seus questionamentos ou sugestões para o
+            autor!
+          </p>
+          <hr />
+          <button id="createTopicBtn">Criar tópico</button>
         </div>
-        
-        <form action="" class="create-topic">
-          <label for="">Assunto</label>
-          <input type="text">
-        </form>
 
+        <div class="create-new-topic hidden">
+          <h4>Seu tópico foi enviado com sucesso! :D</h4>
+          <p>
+            Sabia que o maior estímulo no desenvolvimento científico e cultural
+            é a curiosidade? Deixe seus questionamentos ou sugestões para o
+            autor!
+          </p>
+          <a href="">Descubra outros trabalhos!</a>
+          <hr />
+          <button id="createTopicBtn">Criar novo tópico</button>
+        </div>
+
+        <div class="create-topic hidden">
+          <form action="" class="topicForm">
+            <label>Assunto</label>
+            <input type="text" data-validate class="assunto" />
+            <label>Autor</label>
+            <input type="text" class="autor" />
+            <label>Mensagem</label>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              class="messagem"
+              data-validate
+            ></textarea>
+            <button>Enviar</button>
+          </form>
+        </div>
+
+        <div class="comments">
+
+        </div>
       </div>
     </session>
 
