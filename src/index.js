@@ -64,11 +64,20 @@ class CreateTopic {
         const subject = document.querySelector('.assunto')
         const message = document.querySelector('.messagem')
         const author = document.querySelector('.autor')
-        const commentDiv = document.createElement('div')
-
+        
         const h4 = document.createElement('h4')
         const h5 = document.createElement('h5')
         const p = document.createElement('p')
+        const likes = document.createElement('p')
+        const replies = document.createElement('p')
+        const optionsBtn = new Image(16, 16)
+        optionsBtn.src = '../public/images/dots.png'
+        optionsBtn.classList.add('options')
+        const likesBtn = new Image(30, 20)
+        likesBtn.classList.add('like')
+        likesBtn.src = '../public/images/heart-icon.png'
+        const commentDiv = document.createElement('div')
+        const optionsDiv = document.createElement('div')
 
         if (!author.value) {
             h5.innerHTML = 'Anônimo'
@@ -82,6 +91,12 @@ class CreateTopic {
         commentDiv.appendChild(h4)
         commentDiv.appendChild(h5)
         commentDiv.appendChild(p)
+        commentDiv.appendChild(optionsDiv)
+        optionsDiv.classList.add('comment-options')
+        optionsDiv.appendChild(optionsBtn)
+        optionsDiv.appendChild(likesBtn)
+        optionsDiv.appendChild(likes)
+        optionsDiv.appendChild(replies)
 
         this.comments.appendChild(commentDiv)
 
@@ -93,6 +108,8 @@ class CreateTopic {
         subject.value = ''
         message.value = ''
         author.value = ''
+        likes.innerHTML = 'likes'
+        replies.innerHTML = 'respostas'
 
         const createTopicDiv = document.querySelector('.create-topic')
         createTopicDiv.classList.add('hidden')
@@ -137,3 +154,20 @@ createTopicBtn.addEventListener('click', showTopicForm)
 
 const createNewTopicBtn = document.querySelector('#createNewTopicBtn')
 createNewTopicBtn.addEventListener('click', showTopicForm)
+
+
+window.addEventListener('load', () => {
+    const nav = document.querySelector('nav')
+    const burgerBtn = document.querySelector('.burguer-icon')
+    const cover = document.querySelector('.cover-up')
+
+    burgerBtn.addEventListener('click', () => {
+        nav.classList.add('show')
+        cover.classList.toggle('hidden')
+
+        cover.addEventListener('click', () => {
+            nav.classList.remove('show')
+            cover.classList.add('hidden')
+        })
+    })
+})
