@@ -143,7 +143,7 @@
     font-size: 2rem;
     color: white;
     font-weight: bold;
-    height: 100px;
+    height: 68px;
     background: -webkit-gradient(linear, left top, left bottom, from(#ffb354), to(#ee7a3a));
     background: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
   }
@@ -214,7 +214,7 @@
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
     background-color: #fdf1eb;
-    height: 100px;
+    height: 68px;
     padding: 30px;
     color: #725c5c;
   }
@@ -286,7 +286,6 @@
   }
   .header-bar .header-login {
     font-size: 11px;
-    margin-left: 16px;
     text-align: right;
   }
   .header-bar .user-picture {
@@ -343,11 +342,11 @@
     width: 16px;
   }
   header .header-infos-column h2 {
-    font-size: 0.7rem;
+    font-size: 14px;
     color: #ed7839;
     text-align: right;
     margin: 12px 8px 12px 0;
-    font-weight: 300;
+    font-weight: 500;
   }
   header .header-infos-column .container-title {
     display: -webkit-box;
@@ -445,7 +444,7 @@
     font-size: 14px;
     line-height: 23px;
     letter-spacing: 0.02em;
-    color: #5c5c5c;
+    color: #5C5C5C;
     overflow: hidden;
   }
   .abstract-session #showMore {
@@ -540,7 +539,7 @@
     width: 100%;
     height: 1px;
     border: 1px solid #e7e7e7;
-    margin: 10px 0 10px 0;
+    margin: 15px 0 5px 0;
   }
   .discussion-session .share-ideas button {
     display: -webkit-box;
@@ -564,12 +563,16 @@
     color: white;
     position: relative;
     z-index: 10;
-    bottom: 25px;
+    bottom: 30px;
     width: 150px;
     height: 2rem;
     border: none;
     cursor: pointer;
     font-weight: 700;
+  }
+  .discussion-session .share-ideas button img {
+    height: 15px;
+    margin-right: 12px;
   }
   .discussion-session .create-new-topic {
     display: -webkit-box;
@@ -1065,7 +1068,7 @@
     font-size: 1.5rem;
     color: white;
     font-weight: bold;
-    height: 100px;
+    height: 68px;
     background: -webkit-gradient(linear, left top, left bottom, from(#ffb354), to(#ee7a3a));
     background: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
   }
@@ -1136,7 +1139,7 @@
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
     background-color: #fdf1eb;
-    height: 100px;
+    height: 68px;
     padding: 30px;
     color: #725c5c;
   }
@@ -1494,6 +1497,10 @@
     cursor: pointer;
     font-weight: 700;
   }
+  .discussion-session .share-ideas button img {
+    height: 15px;
+    margin-right: 12px;
+  }
   .discussion-session .create-new-topic {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1613,6 +1620,10 @@
     cursor: pointer;
     font-weight: 700;
     margin: 11px 0 11px 0;
+  }
+  .discussion-session .create-topic form button img {
+    height: 15px;
+    margin-right: 12px;
   }
   .discussion-session {
     display: -webkit-box;
@@ -2006,7 +2017,7 @@
     font-size: .7rem;
     color: white;
     font-weight: bold;
-    height: 50px;
+    height: 68px;
     background: -webkit-gradient(linear, left top, left bottom, from(#ffb354), to(#ee7a3a));
     background: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
   }
@@ -2077,7 +2088,7 @@
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
     background-color: #fdf1eb;
-    height: 80px;
+    height: 68px;
     padding: 10px;
     color: #725c5c;
   }
@@ -2087,10 +2098,10 @@
     cursor: pointer;
   }
   .header-bar .header-bar-title p {
-    font-size: 0.5rem;
+    font-size: 11px;
   }
   .header-bar .header-bar-title h1 {
-    font-size: .4rem;
+    font-size: 11px;
   }
   .header-bar .content-languages {
     display: -webkit-box;
@@ -2673,6 +2684,10 @@
     cursor: pointer;
     font-weight: 700;
   }
+  .discussion-session .share-ideas button img {
+    height: 15px;
+    margin-right: 12px;
+  }
   .discussion-session .create-new-topic {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2742,6 +2757,10 @@
     cursor: pointer;
     font-weight: 700;
   }
+  .discussion-session .create-new-topic button img {
+    height: 15px;
+    margin-right: 12px;
+  }
   .discussion-session .create-topic {
     border: 1px solid #ececec;
     padding: 30px;
@@ -2792,6 +2811,10 @@
     cursor: pointer;
     font-weight: 700;
     margin: 11px 0 11px 0;
+  }
+  .discussion-session .create-topic form button img {
+    height: 15px;
+    margin-right: 12px;
   }
   footer {
     display: -webkit-box;
